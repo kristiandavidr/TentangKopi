@@ -35,7 +35,7 @@ router.post('/signin', async function (req, res) {
         });
         if (!usrPassword)
             return console.log('wrong password');
-
+        console.log('Logged In')
         res.redirect('/');
     } catch (err) {
         res.status(500).json({

@@ -1,5 +1,5 @@
 <template>
-  <form class="form-signin" method="POST" @submit.prevent="signin">
+  <form class="form-signin" method="POST" @submit.prevent="login">
     <label class="label">
       <h1 class="h3 mb-3 font-weight-normal">Masuk ke akun</h1>
     </label>
@@ -8,6 +8,7 @@
       type="email"
       name="email"
       id="email"
+      v-model="email"
       class="form-control"
       placeholder="Email address"
       required
@@ -18,6 +19,7 @@
       type="password"
       name="password"
       id="password"
+      v-model="password"
       class="form-control"
       placeholder="Password"
       required
@@ -27,7 +29,11 @@
         <input type="checkbox" value="remember-me" /> Remember me
       </label>
     </div>
-    <button class="label btn btn-lg btn-outline-light btn-block" type="submit">Sign in</button>
+    <button
+      class="label btn btn-lg btn-outline-light btn-block"
+      type="submit"
+      @click="login"
+    >Sign in</button>
     <p class="mt-2 text-muted">
       Tidak punya akun? Daftar
       <router-link :to="{ name: 'SignUp' }">
@@ -39,6 +45,7 @@
 </template>
 
 <script>
+import Axios from "axios";
 export default {
   name: "SignIn",
   props: {
@@ -50,14 +57,23 @@ export default {
       password: ""
     };
   },
+  mounted() {
+    Axios.get("http://localhost:8000/user");
+  },
   methods: {
     login() {
-      let email = this.email;
-      let password = this.password;
-      this.$store
-        .dispatch("login", { email, password })
-        .then(() => this.$router.push("/"))
-        .catch(err => console.log(err));
+      Axios.post("http://localhost:8000/signin", {
+        email: this.email,
+        password: this.password
+      })
+        .then(response => {
+          console.log("test");
+          this.$router.push({ path: "/" });
+        })
+        .catch(err => {
+          console.log("error");
+        });
+      console.log("hello");
     }
   }
 };

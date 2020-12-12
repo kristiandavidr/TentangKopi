@@ -76,3 +76,9 @@ List Anggota  :
 
 ## Desember 6,2020 v0.9
 ### Migrasi ke Vue.js
+
+## Desember 9,2020 v0.10
+### Pembuatan Page Profile
+
+## Desember 10, 2020 v0.10.1
+### Pembuatan JS di Page Profile

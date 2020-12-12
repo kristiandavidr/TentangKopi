@@ -1,0 +1,284 @@
+<link href="../../Bootstrap/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="../../Bootstrap/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Tentang Kopi </title>
+      <link rel="stylesheet" href="About Us.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+      <script src='scripthome.js'></script>
+      <script src='style.css'></script>
+      
+
+   </head>
+   <body>
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="Website Ilmu Kopi.html">Tentang Kopi</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="sejarah.html">Asal-usul Kopi</a></li>
+                    <li><a href="About Us.html">About us</a></li>
+                    <li><a href="contactus.html">Contact</a></li>
+                    <li><a href="/Login/signin.html">Login</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="isiweb/kamuskopi/kamuskopi.html">Kamus</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+    <div class="zval">
+        <div class="home">
+                <style>
+                        .kotakawalprofile{
+                            background:#fff;
+                            border-radius:0;
+                            margin: 10px 60px;
+                            padding: 30px;
+                            opacity: 100%;
+                            }
+                </style>
+            <div class="about">
+                <h1 style="margin-top: 0px;"></h1>
+                        <div class="kotakawalprofile">
+                            <!-- <div class="col-lg-4">
+                                <div class="boxed boxed--lg boxed--border">
+                                    <hr>
+                                    <div class="text-block" style="font-size: medium;">
+                                        <ul class="menu-vertical">
+                                            <li>
+                                                <a href="#" data-toggle-class=".account-tab:not(.hidden);hidden|#account-password;hidden">Change Password</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" data-toggle-class=".account-tab:not(.hidden);hidden|#account-delete;hidden">Delete Account</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div> -->
+
+                            <br><br><h2 class="fontabout", style="text-align: left; font-size: 30px; color: black;"><b>Profile</b></h2><br><hr><br>
+
+                                <form>
+                                    <div class="row">
+                                        
+                                            <div class="col">
+                                                <label for="formGroupExampleInput" class="tulisan">Real Name : </label>
+                                                <input type="text" class="form-control" id="name1Txt" placeholder="Real Name">
+                                            </div>
+                                            <div class="col">
+                                                <label for="formGroupExampleInput" class="tulisan">Display Name : </label>
+                                                <input type="text" class="form-control" id="name2Txt" placeholder="Display Name">
+                                            </div>
+                                       
+                                    </div>
+                                
+                                    <div class="form-group">
+                                        
+                                            <label for="inputEmail" class="tulisan">Email address : </label>
+                                            <input type="email" class="form-control" id="emailTxt" aria-describedby="emailHelp" placeholder="Ex : example@some.com">
+                                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                        
+                                    </div>
+                                
+                                    <div class="form-group">
+                                        
+                                            <label for="inputAddress" class="tulisan">Address : </label>
+                                            <input type="text" class="form-control" id="addressTxt" placeholder="Input Your Address">
+                                        
+                                    </div>
+                                
+                                    <div class="form-group">
+                                        
+                                            <label for="inputWebsite" class="tulisan">Website Url : </label>
+                                            <input type="text" class="form-control" id="urlTxt" placeholder="Input Your Website Url"></input>
+                                        
+                                    </div>
+                                
+                                    <div class="form-group">
+                                        
+                                            <label for="inputBio" class="tulisan">Biodata : </label>
+                                            <textarea type="text" class="form-control" id="bioTxt" rows="5" placeholder="Input Your Bio"></textarea>
+                                         
+                                    </div>
+                            
+                                    <style>
+                                        .switch {
+                                        position: relative;
+                                        display: inline-block;
+                                        width: 60px;
+                                        height: 24px;
+                                        }
+                                        
+                                        .switch input { 
+                                        opacity: 0;
+                                        width: 0;
+                                        height: 0;
+                                        }
+                                        
+                                        .slider {
+                                        position: absolute;
+                                        cursor: pointer;
+                                        top: 0;
+                                        left: 0;
+                                        right: 0;
+                                        bottom: 0;
+                                        background-color: #ccc;
+                                        border: 0.5px;
+                                        border-color: #8b855e;;
+                                        -webkit-transition: .4s;
+                                        transition: .4s;
+                                        }
+                                        
+                                        .slider:before {
+                                        position: absolute;
+                                        content: "";
+                                        height: 20px;
+                                        width: 20px;
+                                        left: 1.5px;
+                                        bottom: 1.5px;
+                                        top: 1.5px;
+                                        background-color:#ccc;
+                                        border: 0.5px solid;
+                                        border-color: #8b855e;
+                                        -webkit-transition: .4s;
+                                        transition: .4s;
+                                        }
+                                        
+                                        .slider:hover{
+                                            background-color:  #2196F3;
+                                        }
+
+                                        .slider.round:hover{
+                                            border: 0.5px solid;
+                                            border-color: #2196F3;
+                                        }
+                                        
+                                        input:checked + .slider {
+                                        background-color:#ccc;
+                                        }
+
+                                        input:focus + .slider {
+                                        box-shadow: 0 0 1px #8b855e;
+                                        border: 1px solid;
+                                        border-color: #ccc;
+                                        }
+                                        
+                                        input:checked + .slider:before {
+                                        -webkit-transform: translateX(36px);
+                                        -ms-transform: translateX(36px);
+                                        transform: translateX(36px);
+                                        background-color: #2196F3;
+                                        border: 0.5px solid;
+                                        border-color: #2196F3
+
+                                        }
+                                        
+                                        /* Rounded sliders */
+                                        .slider.round {
+                                        border-radius: 34px;
+                                        }
+                                        
+                                        .slider.round:before {
+                                        border-radius: 50%;
+                                        }
+                                        
+                                        .tulisan{
+                                            font-size: 12px;
+                                            color: black;
+                                        }
+                                        </style>
+                                        <div class="form-group">
+                                            <div class="rows">
+                                                <label class="switch">
+                                                    <input type="checkbox" checked>
+                                                    <span class="slider round"></span>
+                                                </label>
+                                                <label for="switch" class="tulisan">Allow my profile to be viewable by guests</label>
+                                            </div>
+                                        </div>
+                                        <form action="#">
+                                            <input type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" value="Save Profile" onclick="profileValidate(); check_email()" />                                    
+                                        </form>
+                                    </form>
+                             </div>
+                        </div>     
+                    
+        
+
+                <footer>
+                    <div class="footer" id="footer">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                    <h4><a href="../Homepage/Website Ilmu Kopi.html"> Tentang Kopi</a> </h4>
+                                </div>
+                                <div class="col-lg-3 col-sm-2 col-xs-3">
+                                    <h3>Need help?</h3>
+                                    <ul>
+                                        <li><a href="contactus.html">Feel free to Contact us</a></li>
+                                        <br/>
+                                        <li> <p></p> </li>
+                                        <li> <p></p> </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-3 col-sm-2 col-xs-3">
+                                    <ul>
+                                        <li> <h5> <a href="About Us.html" style="margin-top: 5em"> ABOUT US</a> <h5></li>
+                                        <li> <h5><a href="sejarah.html"> Asal-usul Tentang Kopi </a> <h5></li>
+                                        <li> <h5><a href="../Login/signin.html"> Login </a> <h5></li>
+                                        <li> <h5><a href="isiweb/kamuskopi/kamuskopi.html">Kamus</a> <h5></li>
+                                        <li> <h5><a href="About Us.html"> Go up </a> <h5></li>
+                                    </ul>
+                                </div>
+                                
+                                <!--/.row--> 
+                            </div>
+                            <!--/.container--> 
+                        </div>
+                        <!--/.footer-->
+                                            
+                        <div class="footer-bottom">
+                            <div class="container">
+                                <p class="pull-left copyright"> Copyright © Tentang Kopi 2020. All right reserved. </p>
+                        
+                            </div>
+                        </div>
+                        <!--/.footer-bottom--> 
+                    </div>  
+                </footer>
+                <!-- Jquery needed -->
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+                <script src="js/scripts.js"></script>
+                <!-- Function used to shrink nav bar removing paddings and adding black background -->
+                <script>
+                    $(window).scroll(function() {
+                        if ($(document).scrollTop() > 50) {
+                            $('.nav').addClass('affix');
+                            console.log("OK");
+                        } else {
+                            $('.nav').removeClass('affix');
+                        }
+                    });
+                </script>
+        </div>
+    </div>
+
+</body>
+</html>

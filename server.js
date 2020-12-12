@@ -14,13 +14,13 @@ mongoose.connect(mongoUri, {
     useUnifiedTopology: true,
     useFindAndModify: false,
 }).then(() => console.log('Connected to Mongodb'));
-
+app.use(express.static('TentangKopi'))
 app.use(express.static(path.join(__dirname, "/Homepage")));
 app.use(express.static(path.join(__dirname, "/Image")));
 app.get('/', function (req, res) {
     res.sendFile(path.join(__dirname + '/Homepage/Website Ilmu Kopi.html'));
 });
-app.use(express.static(path.join(__dirname, "Login")));
+app.use(express.static(path.join(__dirname, "Login/signin.html")));
 
 app.use(express.urlencoded());
 app.use(express.json());

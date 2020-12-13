@@ -27,21 +27,6 @@
                     telah meluas sampai ke Afrika Utara dan biji kopi di sana ditanam secara massal.
                     Dari Afrika Utara itulah biji kopi mulai meluas dari Asia sampai pasaran Eropa
                     dan ketenarannya sebagai minuman mulai menyebar.
-                  </p>
-                  <p class="subtext">
-                    Blog by
-                    <a href>Ricky Hansen</a>
-                  </p>
-                </div>
-                <div class="text-justify content-body">
-                  <p>
-                    Sejarah kopi telah dicatat sejauh pada abad ke-9. Pertama kali, kopi hanya ada
-                    di Ethiopia, di mana biji-bijian asli ditanam oleh orang Ethiopia dataran
-                    tinggi.
-                    Akan tetapi, ketika bangsa Arab mulai meluaskan perdagangannya, biji kopi pun
-                    telah meluas sampai ke Afrika Utara dan biji kopi di sana ditanam secara massal.
-                    Dari Afrika Utara itulah biji kopi mulai meluas dari Asia sampai pasaran Eropa
-                    dan ketenarannya sebagai minuman mulai menyebar.
                     <br />Sejarah kopi sangat erat kaitannya dengan peradaban kaum muslim era
                     kekhalifahan. Peradaban muslim punya pengaruh yang besar bagi perkembangan
                     peradaban
@@ -67,7 +52,6 @@
                     pertengahan abad ke-15.
                     Kopi dipopulerkan menjadi minuman oleh orang-orang muslim. Istilah kopi juga
                     lahir dari bahasa Arab, qahwah yang berarti kekuatan.
-                    >>>>>>> 21765b946434a5d71c61d44523bea33e4010c6d5
                     <br />Sejarah kopi sangat erat kaitannya dengan peradaban kaum muslim era
                     kekhalifahan. Peradaban muslim punya pengaruh yang besar bagi perkembangan
                     peradaban
@@ -160,7 +144,6 @@
                       src="../../assets/img/Sejarah/Sejarah-Kopi(8).jpg"
                       class="rounded tulisandibawahgambar"
                       alt="legenda kopi"
-                      ,
                       style="width: 700px;"
                     />
                     <b>
@@ -195,7 +178,6 @@
                       src="../../assets/img/Sejarah/Sejarah-Kopi(9).jpg"
                       class="rounded tulisandibawahgambar"
                       alt="legenda kopi"
-                      ,
                       style="width: 700px;"
                     />
                     <b>
@@ -325,7 +307,7 @@
                     memahami
                     minuman kita
                   </p>
-                  <p class="comments text-center">Berikan Komentar Anda!</p>=======
+                  <p class="comments text-center">Berikan Komentar Anda!</p>
                   <p>
                     Pada suatu hari, hidup seorang tabib penganut sufi di kota Mocha, Yaman. Ia
                     bernama Ali bin Omar al Shadili dan biasa disapa Omar.
@@ -477,28 +459,195 @@
                     <br />
                     <i>By Author</i>
                   </p>
-                  <img />
 
                   <p class="comments text-center">Berikan Komentar Anda!</p>
-                  <div id="disqus_thread"></div>
+                  <Disqus shortname="tentangkopi-3" />
                 </div>
               </span>
             </div>
           </div>
         </div>
       </div>
+      <div
+        class="BorderColorChangeElement"
+        style="margin: 0 auto;text-align:center;overflow:hidden;border-radius:0px;-webkit-box-shadow: 16px 17px 18px -7px rgba(18,1,18,0.61);-moz-box-shadow: 16px 17px 18px -7px rgba(18,1,18,0.61);box-shadow: 16px 17px 18px -7px rgba(18,1,18,0.61);background:#009688;border:10px solid #000000;padding:8px;max-width:calc(100% - 48px);width:700px"
+      >
+        <div
+          class="imgAnim139"
+          style="display: inline-block;position:relative;vertical-align: middle;padding:8px"
+        >
+          <img src="/../../assets/img/Sejarah/kopibike.PNG" style="max-width:100%;width:60px" />
+        </div>
+        <div
+          style="display:inline-block;text-shadow:#030303 4px 4px 4px;position:relative;vertical-align: middle;padding:8px;font-size:45px;color:#ffffff;font-weight:normal"
+        >Coffee Bike</div>
+        <div
+          style="display:inline-block;text-shadow:#030303 4px 4px 4px;position:relative;vertical-align: middle;padding:8px;font-size:14px;color:#ffffff;font-weight:normal"
+        >Minumlah Coffee Bike, rasanya seperti anda menjadi Ironmen !</div>
+        <div
+          class="btnAnim139"
+          style="display:inline-block;position:relative;vertical-align: middle;padding:8px"
+        >
+          <a
+            target="_blank"
+            href="https://gofood.co.id/english/jakarta/restaurant/coffee-bike-grogol-58c8c97f-7b84-49ba-a89d-f34289390657"
+          >
+            <input
+              type="button"
+              value="Visit Now"
+              style="margin:0px;background:#000000;padding:8px;border:3px solid red;color:#ffffff;border-radius:0px;cursor:pointer"
+            />
+          </a>
+        </div>
+        <a
+          target="_blank"
+          href="https://www.instagram.com/coffeebikee/"
+          class="w3-button w3-animate-zoom"
+        >
+          <img
+            src="https://images.vexels.com/media/users/3/137380/isolated/preview/1b2ca367caa7eff8b45c09ec09b44c16-instagram-icon-logo-by-vexels.png"
+            style="width: 36px;height: 36px;"
+          />
+        </a>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+import { Disqus } from "vue-disqus";
+
 export default {
   name: "Body",
   props: {
     msg: String
+  },
+  components: {
+    Disqus
   }
 };
 </script>
 
 <style scoped>
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,500,700");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@200;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  font-size: 62.5%;
+  font-size: 10px;
+}
+.zval {
+  z-index: 50;
+}
+.myH2 {
+  margin-left: 20px;
+  font-size: 5rem;
+  color: black;
+  font-family: "Roboto Slab", serif;
+}
+.myP {
+  text-align: justify;
+  padding-left: 15%;
+  padding-right: 15%;
+  font-size: 20px;
+}
+@media all and (max-width: 700px) {
+  .myP {
+    padding: 2%;
+  }
+}
+
+body {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+span {
+  font-size: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: #0b0135;
+  border-bottom: 2px solid #0b0135;
+}
+.box {
+  padding: 25px;
+  background-color: black;
+  background-blend-mode: overlay;
+  background-repeat: repeat;
+  background-size: 100%;
+}
+.box a,
+a:hover,
+a:active,
+a:focus {
+  color: white;
+  text-decoration: none;
+}
+
+.box .card-width {
+  width: 100%;
+}
+.kotakawal {
+  background: #393e46;
+  border-radius: 0;
+  margin: 10px 60px;
+  padding: 30px;
+}
+
+.box .container {
+  padding: 70px;
+  margin: auto;
+  color: #eeeeee;
+}
+.box .container .card {
+  height: 400px;
+  background-color: #393e46;
+  box-shadow: 25px 25px 100px 0 black;
+  transition: all 0.2s ease-in-out;
+}
+.box .container .card:hover {
+  transform: scale(1.1);
+}
+.box .container .icon {
+  max-width: 75px;
+  max-height: 75px;
+  margin: auto;
+  margin-top: 50px;
+}
+.img-header {
+  width: 100%;
+}
+.content-header {
+  padding: 20px;
+}
+.content-header .title {
+  font-family: "Roboto Slab", serif;
+  font-size: 50px;
+}
+.content-header .subtext {
+  font-size: 12px;
+}
+.content-body {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+.comments {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.main {
+  padding: 16px;
+  margin-bottom: 30px;
+}
 </style>

@@ -9,7 +9,7 @@
 <script>
 import Body from "@/components/Sejarah/Body.vue";
 import Footer from "@/components/Footer.vue";
-import NavBar from "@/components/Sejarah/NavBar.vue";
+import NavBar from "@/components/NavBar.vue";
 
 export default {
   title: "Sejarah",

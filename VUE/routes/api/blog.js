@@ -18,4 +18,23 @@ router.post('/blogs', async function (req, res) {
   console.log('data saved');
 });
 
+router.get("/blogs/:id", async (req, res) => {
+  try {
+    let blog = await blogSchema.findOne({
+      _id: req.params.id
+    });
+    res.json({
+      success: true,
+      blog: blog
+    });
+
+  } catch (err) {
+    res.status(500).json({
+      success: false,
+      message: err.message
+    });
+
+  }
+});
+
 module.exports = router;
